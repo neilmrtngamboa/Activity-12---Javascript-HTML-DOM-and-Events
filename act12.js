@@ -8,8 +8,5 @@ function addTolist (){
 
 }
 
-document.querySelector('#addTask').addEventListener('click',addTaskToList);
+document.querySelector('#addTask').addEventListener('click',addTaskToList());
 
-function addTaskToList(){
-    document.querySelector('#taskList').appendChild('add');
-}
