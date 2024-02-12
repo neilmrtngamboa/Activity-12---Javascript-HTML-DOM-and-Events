@@ -2,11 +2,11 @@ document.querySelector('#addTask').addEventListener('click', () => {
     
     if (document.querySelector('#todoInput').value != ""){
         document.querySelector('#taskList').innerHTML += 
-        `<div class = "mt-3">
+        `<li class = "mt-3">
         <button class="btn btn-success rounded-circle doneButton">✔</button>
         <button class ="btn btn-danger rounded-circle removeButton">X</button>
         <span class="fw-bold fs-4">${document.querySelector('#todoInput').value}</span>
-        </div>`;
+        </li>`;
         document.querySelector('#todoInput').value = "";
     }else{
         alert ("Your output is empty!");
