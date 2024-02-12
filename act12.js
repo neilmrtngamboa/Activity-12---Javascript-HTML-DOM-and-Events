@@ -13,7 +13,7 @@ document.querySelector('#addTask').addEventListener('click', () => {
         alert("Your output is empty!");
     }
 
-    const doneButtons = document.querySelectorAll('.doneButton');{
+    let doneButtons = document.querySelectorAll('.doneButton');{
 
         doneButtons.forEach(doneButton => {
             doneButton.addEventListener('click', (event) => {
@@ -23,4 +23,14 @@ document.querySelector('#addTask').addEventListener('click', () => {
             } )
         })
     }
+
+    let removeButtons = document.querySelectorAll('.removeButton');{
+
+        removeButtons.forEach(removeButton => {
+            removeButton.addEventListener('click', (i) => {
+                i.target.parentElement.remove();
+            })
+        })
+    }
+
 } )
