@@ -9,7 +9,7 @@ document.querySelector('#addTask').addEventListener('click', () => {
         </div>`;
         document.querySelector('#todoInput').value = "";
     }else{
-        alert("Your output is empty!");
+        alert ("Your output is empty!");
     }
 
     let doneButtons = document.querySelectorAll('.doneButton');{
