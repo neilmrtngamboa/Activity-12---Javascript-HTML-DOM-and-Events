@@ -6,8 +6,7 @@ document.querySelector('#addTask').addEventListener('click', () => {
         <button class="doneButton">Done</button>
         <button class ="removeButton">Remove</button>
         <span>${document.querySelector('#todoInput').value}</span>
-        </div>
-        <hr>`;
+        </div>`;
         document.querySelector('#todoInput').value = "";
     }else{
         alert("Your output is empty!");
