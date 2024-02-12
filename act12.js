@@ -7,6 +7,7 @@ document.querySelector('#addTask').addEventListener('click', () => {
         <span>${document.querySelector('#todoInput').value}</span>
         <hr>
         </div>`;
+        document.querySelector('#todoInput').value = "";
     }else{
         alert("Your output is empty!");
     }
