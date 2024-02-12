@@ -4,6 +4,7 @@ document.querySelector('#addTask').addEventListener('click', () => {
         document.querySelector('#taskList').innerHTML += 
         `<div>
         <button class="doneButton">Done</button>
+        <button class ="removeButton">Remove</button>
         <span>${document.querySelector('#todoInput').value}</span>
         <hr>
         </div>`;
