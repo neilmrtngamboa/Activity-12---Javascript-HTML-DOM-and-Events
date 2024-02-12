@@ -6,10 +6,21 @@ document.querySelector('#addTask').addEventListener('click', () => {
         <button class="doneButton">Done</button>
         <button class ="removeButton">Remove</button>
         <span>${document.querySelector('#todoInput').value}</span>
-        <hr>
-        </div>`;
+        </div>
+        <hr>`;
         document.querySelector('#todoInput').value = "";
     }else{
         alert("Your output is empty!");
+    }
+
+    const doneButtons = document.querySelectorAll('.doneButton');{
+
+        doneButtons.forEach(doneButton => {
+            doneButton.addEventListener('click', (event) => {
+                event.target.parentElement.lastElementChild.style =
+                "text-decoration: line-through; background-color: green; color: white;";
+                event.target.remove();
+            } )
+        })
     }
 } )
